@@ -1,0 +1,32 @@
+nav{
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    background-color: #65BB50;
+}
+
+ul{
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+li{
+    display: inline;
+    margin: auto;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight:bold;
+}
+
+a:hover{
+    border-bottom: double;
+    border-bottom-right-radius: 3px;
+}
+

@@ -1,46 +1,52 @@
 import React, { Component } from 'react';
 import './App.css';
 // Component
+import Loading from './layout/Loading';
 import Accueil from './layout/Accueil';
-import NotFound from './layout/NotFound';
 import Connexion from './layout/Connexion';
+import Commande from './layout/Commande';
+import ConfirmationCommande from './layout/ConfirmationCommande';
+import Inscription from './layout/Inscription';
+import Paiement from './layout/Paiement';
+import PaiementPaypal from './layout/PaiementPaypal';
+import PaiementStripe from './layout/PaiementStripe';
+import Tribu from './layout/Tribu';
+import Validation from './layout/Validation';
+
+
+import NotFound from './layout/NotFound';
 //CSS
 //import './Assets/style.css';
 // Rooter
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-const App = () => {
+const Root = () => {
     return (
         <Router>
             <div>
-                <ul>
-                    <li><Link to="/layout/Accueil">Accueil</Link></li>
-                    <li><Link to="/layout/Commande">Commande</Link></li>
-                    <li><Link to="/layout/ConfirmationCommande">Confirmation commande</Link></li>
-                    <li><Link to="/layout/Connexion">Connexion</Link></li>
-                    <li><Link to="/layout/Inscription">Inscription</Link></li>
-                    <li><Link to="/layout/Loading">Loading</Link></li>
-                    <li><Link to="/layout/NotFound">NotFound</Link></li>
-                    <li><Link to="/layout/Paiement">Paiement</Link></li>
-                    <li><Link to="/layout/PaiementPaypal">Paiement Paypal</Link></li>
-                    <li><Link to="/layout/PaiementStripe">Paiement Stripe</Link></li>
-                    <li><Link to="/layout/Tribu">Tribu</Link></li>
-                    <li><Link to="/layout/Validation">Validation</Link></li>
-
-                </ul>
+                <nav>
+                    <ul>
+                        <li><Link to="/Accueil">Accueil</Link></li>
+                        <li><Link to="/Inscription">Inscription</Link></li>
+                        <li><Link to="/Connexion">Connexion</Link></li>
+                        <li><Link to="/Tribu">Tribu</Link></li>
+                        <li><Link to="/Commande">Commande</Link></li>
+                        <li><Link to="/Paiement">Paiement</Link></li>
+                    </ul>
+                </nav>
                 <hr/>
                 <Switch>
-                    <Route exact path='/layout/Accueil' component={Accueil}/>
-                    <Route exact path='/layout/Connexion' component={Connexion}/>
-                    <Route exact path='/layout/Commande' component={Commande}/>
-                    <Route exact path='/layout/ConfirmationCommande' component={ConfirmationCommande}/>
-                    <Route exact path='/layout/Inscription' component={Inscription}/>
-                    <Route exact path='/layout/Loading' component={Loading}/>
-                    <Route exact path='/layout/Paiement' component={Paiement}/>
-                    <Route exact path='/layout/PaiementPaypal' component={PaiementPaypal}/>
-                    <Route exact path='/layout/PaiementStripe' component={PaiementStripe}/>
-                    <Route exact path='/layout/Tribu' component={Tribu}/>
-                    <Route exact path='/layout/Validation' component={Validation}/>
+                    <Route exact path='/Loading' component={Loading}/>
+                    <Route exact path='/Accueil' component={Accueil}/>
+                    <Route exact path='/Connexion' component={Connexion}/>
+                    <Route exact path='/Commande' component={Commande}/>
+                    <Route exact path='/ConfirmationCommande' component={ConfirmationCommande}/>
+                    <Route exact path='/Inscription' component={Inscription}/>
+                    <Route exact path='/Paiement' component={Paiement}/>
+                    <Route exact path='/PaiementPaypal' component={PaiementPaypal}/>
+                    <Route exact path='/PaiementStripe' component={PaiementStripe}/>
+                    <Route exact path='/Tribu' component={Tribu}/>
+                    <Route exact path='/Validation' component={Validation}/>
                     <Route component={NotFound}/>
                 </Switch>
             </div>
@@ -48,4 +54,4 @@ const App = () => {
     )
 }
 
-export default App;
+export default Root;

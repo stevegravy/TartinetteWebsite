@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import CommandeBouton from '../components/CommandeBouton';
 
 class Accueil extends React.Component {
     render() {
         return(
-            <h1>Accueil</h1>
+            <div className="accueil">
+                <h1>Accueil</h1>
+                <CommandeBouton/>
+            </div>
         )
     }
 }
