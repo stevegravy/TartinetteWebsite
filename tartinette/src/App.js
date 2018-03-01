@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // Component
 import Router from './Router.js';
 //CSS
-import './Router.css';
+import './App.css';
 
 
 export default class App extends Component{

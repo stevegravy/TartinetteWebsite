@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+//CSS
+import './Router.css';
+
 // Component
 import Loading from './layout/Loading';
 import Accueil from './layout/Accueil';
@@ -26,7 +28,7 @@ const Root = () => {
             <div>
                 <nav>
                     <ul>
-                        <li><Link to="/Accueil">Accueil</Link></li>
+                        <li><Link to="/">Accueil</Link></li>
                         <li><Link to="/Inscription">Inscription</Link></li>
                         <li><Link to="/Connexion">Connexion</Link></li>
                         <li><Link to="/Tribu">Tribu</Link></li>
@@ -36,8 +38,8 @@ const Root = () => {
                 </nav>
                 <hr/>
                 <Switch>
+                    <Route exact path='/' component={Accueil}/>
                     <Route exact path='/Loading' component={Loading}/>
-                    <Route exact path='/Accueil' component={Accueil}/>
                     <Route exact path='/Connexion' component={Connexion}/>
                     <Route exact path='/Commande' component={Commande}/>
                     <Route exact path='/ConfirmationCommande' component={ConfirmationCommande}/>

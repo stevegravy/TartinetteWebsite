@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import CommandeBouton from '../components/CommandeBouton';
 
-class Accueil extends React.Component {
+class ConnexionBouton extends React.Component {
     render() {
         return(
-            <div className="accueil">
-                <h1>Accueil</h1>
-                <CommandeBouton/>
+            <div className="connexionbouton">
+                <h1>ConnexionBouton</h1>
             </div>
         )
     }
 }
 
-export default Accueil;
+export default ConnexionBouton;
 
 
 
