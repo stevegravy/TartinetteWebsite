@@ -8,7 +8,6 @@ class Commande extends React.Component {
     }
 }
 
-export default Commande;
-
+export default Commande
 
 

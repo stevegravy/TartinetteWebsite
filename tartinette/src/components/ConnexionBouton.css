@@ -1,0 +1,29 @@
+.envoi{
+    text-align: center;
+}
+
+.envoi button {
+    background-color: #65BB50;
+}
+
+.envoi button:hover {
+    background-color: #65BB50;
+}
+
+.connexion_modal{
+    width: 500px;
+}
+
+.inscription{
+    text-align: right;
+}
+
+.lien_inscription a{
+    color: #65BB50;
+    text-decoration: none;
+}
+
+.lien_inscription a:hover{
+    color: #65BB50;
+    border-bottom: solid #65BB50;
+}

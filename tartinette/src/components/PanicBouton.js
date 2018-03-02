@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './PanicBouton.css';
 
 class PanicBouton extends React.Component {
     getComponent = () =>{
@@ -8,7 +9,9 @@ class PanicBouton extends React.Component {
     render() {
         return(
             <div className="PanicBouton">
-                <button onClick = {this.getComponent}>PANIC!</button>
+                <div className="border_button">
+                    <button onClick = {this.getComponent}>PANIC!</button>
+                </div>
             </div>
         )
     }
