@@ -3,3 +3,7 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+.btn waves-effect waves-light{
+  background-color: #65BB50;
+}

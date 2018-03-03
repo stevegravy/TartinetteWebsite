@@ -1,3 +1,8 @@
+.main_content{
+    margin: auto;
+    max-width: 1200px;
+}
+
 .accueil{
     text-align: center;
 }
@@ -15,6 +20,13 @@
     margin: auto;
 }
 
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+
 .responsive-img{
     margin:auto;
     margin-top: 14px;
@@ -28,17 +40,59 @@
     margin-top: 14px;
 }
 
+.ConnexionBouton{
+    background-color: #65BB50;
+    padding: 20px;
+}
+
+.PanicBouton{
+    margin-top: 50px;
+}
+
+.accueilParagraphe1{
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-color: gray;
+    border-radius: 5px;
+    padding-bottom: 40px;
+}
+
 .accueilParagraphe2{
     display: flex;
+    text-align: center;
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.textInRed{
+    color: #EB222E;
+}
+
+.iconeParagraphe{
+    margin: 60px;
 }
 
 .accueilParagraphe3{
     width: 100%;
     text-align: center;
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.logo_ecole_saint_henri{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .footer{
     width: 100%;
     text-align: center;
+    color: gray;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 

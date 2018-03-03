@@ -28,37 +28,37 @@ class Accueil extends React.Component {
                 </div>
                 <div className="main_content">
                     <div className="accueilParagraphe1">
-                        <h1 className="couleurPasCTA">No pic-nic? No panic!</h1>
-                        <p>Inscrivez-vous et commandez quand vous voulez!</p>
+                        <h1 className="textInRed">No pic-nic? No panic!</h1>
+                        <h2><span className="textInRed">Inscrivez-vous</span> et commandez quand vous voulez!</h2>
                         <ConnexionBouton/>
-                        <p>Pour demain? Pas de problème <br/>
-                            Commande possible jusqu'a 8 heure, le matin même.</p>
+                        <h3><span className="textInRed">Pour demain?</span> Pas de problème <br/>
+                            Commande possible jusqu'a 8 heure, le matin même.</h3>
                         <PanicBouton/>
                     </div>
                     <div className="accueilParagraphe2">
-                        <div className="frigoParagraphe">
+                        <div className="iconeParagraphe">
                             <img class="responsive-img" src={frigo} alt="image frigo" className="frigo"/>
-                            <h2 className="accueilParagraphe2">Frigo vide?</h2>
+                            <h4 className="textInRed">Frigo vide?</h4>
                             <p>Le jambon est vert? Le pain est poilu? <br/>
                                 La salade est blette? Pas de soucis!</p>
                         </div>
-                        <div className="ordinateurParagraphe">
+                        <div className="iconeParagraphe">
                             <img class="responsive-img" src={ordinateur} alt="image ordinateur" className="ordinateur"/>
-                            <h2 className="accueilParagraphe2">Relax Max!</h2>
+                            <h4 className="textInRed">Relax Max!</h4>
                             <p>Prenez notre formule abonnement et<br/>
                                 commandez comme bon vous semble.<br/>
                                 Fini les boîtes à tartines...</p>
                         </div>
-                        <div className="boiteTartinesParagraphe">
+                        <div className="iconeParagraphe">
                             <img class="responsive-img" src={boiteatartines} alt="image boite à tartines" className="boitetartines"/>
-                            <h2 className="accueilParagraphe2">Fini la boîte</h2>
-                            <p>Prenez notre formule abonnement etDu sain, du local, de saison, du frais!<br/>
+                            <h4 className="textInRed">Fini la boîte</h4>
+                            <p>Du sain, du local, de saison, du frais!<br/>
                                 Que du bon pour vos enfants...
                             </p>
                         </div>
-                        <div className="taretineParagraphe">
+                        <div className="iconeParagraphe">
                             <img class="responsive-img" src={tartine} alt="image tartin" className="tartine"/>
-                            <h2 className="accueilParagraphe2">Testé et approuvé!</h2>
+                            <h4 className="textInRed">Testé et approuvé!</h4>
                             <p>Notre concept a été testé et approuvé<br/>
                                 par les enfants et les parents de<br/>
                                 l'école Saint-Henri...</p>
@@ -69,6 +69,7 @@ class Accueil extends React.Component {
                     </div>
                     <div className="footer">
                         <img class="responsive-img" src={legumes_vert} alt="image de légumes"/>
+                        <p className="footer">Copyright © tartinette.be 2018</p>
                     </div>
                 </div>
             </div>

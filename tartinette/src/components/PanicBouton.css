@@ -1,19 +1,20 @@
 .border_button{
     background-color: black;
     border-radius: 100%;
-    width: 210px;
-    height: 193px;
-    padding-top: 13px;
+    width: 251px;
+    height: 223px;
+    padding-top: 7px;
     margin: auto;
 }
 
 .border_button button{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
+    color: white;
 }
 
 .PanicBouton button{
-    padding:70px;
+    padding: 80px 70px 80px 70px;;
     background-color: red;
     border-radius: 100%;
 }
