@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button, Icon, Modal, Row, Input} from 'react-materialize'
+import {Button, Modal, Row, Input} from 'react-materialize';
 //CSS
 import './ConnexionBouton.css';
 

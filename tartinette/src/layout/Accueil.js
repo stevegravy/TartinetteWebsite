@@ -22,16 +22,18 @@ class Accueil extends React.Component {
             <div className="accueil">
                 <div className="header">
                     <div className="logoBanniereTartinette">
-                        <img class="responsive-img" src={logo_tartine_rond_vert} alt="logo tartinette"/>
+                            <img class="responsive-img" src={logo_tartine_rond_vert} alt="logo tartinette"/>
                         <img class="responsive-img" src={tartinette} alt="tartinette" className="tartinette"/>
                     </div>
                 </div>
                 <div className="main_content">
                     <div className="accueilParagraphe1">
-                        <h1 className="textInRed">No pic-nic? No panic!</h1>
-                        <h2><span className="textInRed">Inscrivez-vous</span> et commandez quand vous voulez!</h2>
-                        <ConnexionBouton/>
-                        <h3><span className="textInRed">Pour demain?</span> Pas de problème <br/>
+                        <div className="border_bottom">
+                            <h1 className="textInRed">No pic-nic? No panic!</h1>
+                            <h2 className="padding_bottom"><span className="textInRed">Inscrivez-vous</span> et commandez quand vous voulez!</h2>
+                            <ConnexionBouton/>
+                        </div>
+                        <h3 className="margin_top"><span className="textInRed">Pour demain?</span> Pas de problème <br/>
                             Commande possible jusqu'a 8 heure, le matin même.</h3>
                         <PanicBouton/>
                     </div>

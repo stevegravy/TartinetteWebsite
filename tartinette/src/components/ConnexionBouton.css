@@ -1,5 +1,11 @@
-.connexionbouton .btn waves-effect waves-light{
-    background-color: #65BB50;
+.connexionbouton button{
+    background-color: #00AF65;
+    padding: 20px 50px 60px 50px;
+}
+
+.connexionbouton button:hover{
+    background-color: #02c975;
+    padding: 25px 55px 65px 55px;
 }
 
 .envoi{
@@ -7,11 +13,11 @@
 }
 
 .envoi button {
-    background-color: #65BB50;
+    background-color: #00AF65;
 }
 
 .envoi button:hover {
-    background-color: #65BB50;
+    background-color: #02c975;
 }
 
 .connexion_modal{
@@ -23,11 +29,11 @@
 }
 
 .lien_inscription a{
-    color: #65BB50;
+    color: #00AF65;
     text-decoration: none;
 }
 
 .lien_inscription a:hover{
-    color: #65BB50;
-    border-bottom: solid #65BB50;
+    color: #02c975;
+    border-bottom: solid #02c975;
 }

@@ -10,8 +10,19 @@
 .header{
     width: 100%;
     height: 314px;
-    background-color: darkslategrey;
+    background-color: white;
     text-align: center;
+}
+
+.backgroundLogo{
+    background-color: black;
+    /*
+    border-radius: 50%;
+    */
+    width: 251px;
+    height: 251px;
+    padding-top: 5px;
+    margin: auto;
 }
 
 .logoBanniereTartinette{
@@ -23,6 +34,10 @@
 h2{
     font-size: 40px;
 }
+.border_bottom .padding_bottom{
+    margin: 0;
+}
+
 h3{
     font-size: 30px;
 }
@@ -35,17 +50,24 @@ h3{
 .tartinette{
     margin: auto;
     background-color: antiquewhite;
-    border-radius: 50px;
+    border-radius: 2px;
     height: 72px;
     margin-top: 14px;
 }
 
-.ConnexionBouton{
-    background-color: #65BB50;
+.connexionbouton{
     padding: 20px;
+    margin-bottom: 14px;
 }
 
-.PanicBouton{
+.border_bottom{
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+.margin_top{
     margin-top: 50px;
 }
 
@@ -67,7 +89,8 @@ h3{
 }
 
 .textInRed{
-    color: #EB222E;
+    /*color: #264B7D;*/
+    color: #3D7ACB;
 }
 
 .iconeParagraphe{

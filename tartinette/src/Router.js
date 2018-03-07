@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {Button, Dropdown, NavItem} from 'react-materialize';
 //CSS
 import './Router.css';
 
@@ -15,12 +17,7 @@ import PaiementStripe from './layout/PaiementStripe';
 import Tribu from './layout/Tribu';
 import Validation from './layout/Validation';
 
-
 import NotFound from './layout/NotFound';
-//CSS
-//import './Assets/style.css';
-// Rooter
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 const Root = () => {
     return (
@@ -34,6 +31,14 @@ const Root = () => {
                         <li><Link to="/Tribu">Tribu</Link></li>
                         <li><Link to="/Commande">Commande</Link></li>
                         <li><Link to="/Paiement">Paiement</Link></li>
+                        <li><Dropdown trigger={
+                                <Button>Réglages</Button>
+                            }>
+                                <NavItem>Tribu</NavItem>
+                                <NavItem divider />
+                                <NavItem>Paiement</NavItem>
+                            </Dropdown>
+                        </li>
                     </ul>
                 </nav>
                 <hr/>

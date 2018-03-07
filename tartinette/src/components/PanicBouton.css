@@ -1,21 +1,50 @@
 .border_button{
     background-color: black;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 251px;
-    height: 223px;
-    padding-top: 7px;
+    height: 251px;
+    padding-top: 5px;
     margin: auto;
+    transition: all 200ms ease-in;
 }
 
 .border_button button{
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-}
-
-.PanicBouton button{
     padding: 80px 70px 80px 70px;;
     background-color: red;
     border-radius: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    height: 240px;
+    width: 240px;
+    transition: all 300ms ease-in;
+}
+
+.border_button button:hover{
+    height: 245px;
+    width: 245px;
+}
+
+.border_button:hover{
+    width: 256px;
+    height: 256px;
+}
+
+.PanicBouton button{
+    width: 251px;
+    height: 251px;
+    border-radius: 50%;
+    background-color: #EB222E;
+    border: 5px solid black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.PanicBouton button:hover{
+    width: 261px;
+    height: 261px;
+    border-radius: 50%;
+    background-color: red;
+    border: 5px solid black;
 }
 

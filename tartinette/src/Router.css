@@ -2,7 +2,7 @@ nav{
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
-    background-color: #65BB50;
+    background-color: #00AF65;
 }
 
 ul{
@@ -17,6 +17,11 @@ li{
     display: inline;
     margin: auto;
     text-decoration: none;
+}
+
+ul button{
+    background-color: #00AF65;
+    text-transform: inherit;
 }
 
 nav a{
