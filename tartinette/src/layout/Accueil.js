@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ConnexionBouton from '../components/ConnexionBouton';
 import PanicBouton from "../components/PanicBouton";
+import {Row, Input, Button} from 'react-materialize';
 
 //import CSS
 import './Accueil.css'
@@ -22,7 +23,7 @@ class Accueil extends React.Component {
             <div className="accueil">
                 <div className="header">
                     <div className="logoBanniereTartinette">
-                            <img class="responsive-img" src={logo_tartine_rond_vert} alt="logo tartinette"/>
+                        <img class="responsive-img" src={logo_tartine_rond_vert} alt="logo tartinette"/>
                         <img class="responsive-img" src={tartinette} alt="tartinette" className="tartinette"/>
                     </div>
                 </div>
@@ -66,6 +67,14 @@ class Accueil extends React.Component {
                                 l'école Saint-Henri...</p>
                         </div>
                     </div>
+                    <Row className="contact">
+                        <h4 className="titreContact">Vous pouvez nous contacter si besoin:</h4>
+                        <Input s={6} label="Prénom" required />
+                        <Input s={6} label="Nom" required />
+                        <Input type="email" label="Email" s={12} required />
+                        <Input type='textarea' label="Votre message" s={12} required />
+                        <Button waves='light'>Envoyer</Button>
+                    </Row>
                     <div className="accueilParagraphe3">
                         <img class="responsive-img" src={logo_ecole_saint_henri} alt="logo_ecole_saint_henri" className="logo_ecole_saint_henri"/>
                     </div>

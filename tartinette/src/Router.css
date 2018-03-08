@@ -19,9 +19,11 @@ li{
     text-decoration: none;
 }
 
-ul button{
-    background-color: #00AF65;
+Dropdown button{
     text-transform: inherit;
+    background-color: #00AF65;
+    box-shadow: unset;
+    font-weight: bold;
 }
 
 nav a{

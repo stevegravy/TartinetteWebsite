@@ -1,0 +1,13 @@
+.boutonAjoutEnfant{
+    float: right;
+    padding-top: 18px;
+}
+
+.boutonAjoutEnfant Button i{
+    margin-left: 10px;
+    background-color: #00AF65;
+}
+
+.boutonAjoutEnfant Button i:hover{
+    background-color: #02c975;
+}

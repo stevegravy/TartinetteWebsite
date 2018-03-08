@@ -14,17 +14,6 @@
     text-align: center;
 }
 
-.backgroundLogo{
-    background-color: black;
-    /*
-    border-radius: 50%;
-    */
-    width: 251px;
-    height: 251px;
-    padding-top: 5px;
-    margin: auto;
-}
-
 .logoBanniereTartinette{
     display: grid;
     width: 400px;
@@ -104,6 +93,18 @@ h3{
     border-bottom-width: medium;
     border-color: gray;
     border-radius: 5px;
+}
+
+.contact Button{
+    background-color: #00AF65;
+}
+
+.contact Button:hover{
+    background-color: #02c975;
+}
+
+.titreContact{
+    color: #3D7ACB;
 }
 
 .logo_ecole_saint_henri{
