@@ -37,3 +37,16 @@
     color: #02c975;
     border-bottom: solid #02c975;
 }
+.lien_mdpOublie{
+    text-align: right;
+}
+
+.lien_mdpOublie a{
+    color: #00AF65;
+    text-decoration: none;
+}
+
+.lien_mdpOublie a:hover{
+    color: #02c975;
+    border-bottom: solid #02c975;
+}

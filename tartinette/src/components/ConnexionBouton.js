@@ -18,8 +18,11 @@ class ConnexionBouton extends React.Component {
                             <Button waves='light'>Confirmer</Button>
                         </div>
                     </Row>
+                    <div className="oubliMotDePasse">
+                        <p className="lien_mdpOublie"><a href="./InscriptionBouton.js">Mot de passe oublié?</a></p>
+                    </div>
                     <div className="inscription">
-                        <p className="lien_inscription"><a href="./InscriptionBouton.js">Inscrivez-vous</a></p>
+                        <p className="lien_inscription"><a href="./InscriptionBouton.js">Pas encore inscrit?</a></p>
                     </div>
                 </Modal>
             </div>

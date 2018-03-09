@@ -107,6 +107,15 @@ h3{
     color: #3D7ACB;
 }
 
+.contact{
+    margin-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-color: gray;
+    border-radius: 5px;
+}
+
 .logo_ecole_saint_henri{
     margin-top: 40px;
     margin-bottom: 40px;

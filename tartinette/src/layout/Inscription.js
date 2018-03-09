@@ -18,18 +18,20 @@ class Inscription extends React.Component {
                         <Input s={12} label="Votre prénom" />
                         <h3 className="bleu">Votre tribu</h3>
                         <Input s={12} label="Enfant 1" Placeholder="Nom et prénom de l'enfant" />
-                        <Collapsible>
-                            <CollapsibleItem header= "Ecole de l'enfant" s={12} >
-                                <Row>
-                                    <Input className='with-gap' name='group1' type='radio' value='Saint-Charles' label='Institut Saint-Charles - Molenbeek' />
-                                    <Input className='with-gap' name='group1' type='radio' value='Saint-Denis' label='Saint-Denis - Woluwe-St-Lambert' />
-                                    <Input className='with-gap' name='group1' type='radio' value='Serge Creuz' label='Collège Serge Creuz' />
-                                </Row>
-                            </CollapsibleItem>
-                        </Collapsible>
+                            <div className="allignementEcoleEnfant">
+                                <Collapsible>
+                                    <CollapsibleItem className="ecoleEnfant" header="Ecole de l'enfant" s={12} >
+                                        <Row>
+                                            <Input className='with-gap' name='group1' type='radio' value='Saint-Charles' label='Institut Saint-Charles - Molenbeek' />
+                                            <Input className='with-gap' name='group1' type='radio' value='Saint-Denis' label='Saint-Denis - Woluwe-St-Lambert' />
+                                            <Input className='with-gap' name='group1' type='radio' value='Serge Creuz' label='Collège Serge Creuz' />
+                                        </Row>
+                                    </CollapsibleItem>
+                                </Collapsible>
+                            </div>
                         <Input s={12} label="Détails" Placeholder="Allergies, intolérences, spécificités,..."/>
                         <p className="boutonAjoutEnfant">ajouter un enfant</p>
-                        <Button floating large className='red' waves='light' icon='add' />
+                        <Button floating large className='green' waves='light' icon='add' />
                         <h3 className="bleu">Votre compte</h3>
                         <Input type="email" label="Email" s={12} />
                         <Input type="password" label="Mot de passe" s={12} />

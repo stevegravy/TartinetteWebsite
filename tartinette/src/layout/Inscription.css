@@ -1,6 +1,7 @@
 .boutonAjoutEnfant{
     float: right;
     padding-top: 18px;
+    padding-right: 906px;
 }
 
 .boutonAjoutEnfant Button i{
@@ -10,4 +11,25 @@
 
 .boutonAjoutEnfant Button i:hover{
     background-color: #02c975;
+}
+
+.bleu{
+    color: #3D7ACB;
+    padding-top: 18px;
+}
+
+.ecoleEnfant{
+color: #02c975;
+}
+
+.ecoleEnfant:hover{
+    color: #02c975;
+}
+
+.allignementEcoleEnfant{
+    width: 100%;
+}
+
+.Collapsible{
+    margin: auto;
 }
