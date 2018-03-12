@@ -6,7 +6,8 @@ class Footer extends React.Component {
     render() {
         return (
             <div className="footer">
-                <img src={legumes_vert} alt="image de légumes"/>
+                <img class="responsive-img" src={legumes_vert} alt="image de légumes"/>
+                <p className="footer">Copyright © tartinette.be 2018</p>
             </div>
         )
     }

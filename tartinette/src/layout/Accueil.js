@@ -2,31 +2,25 @@ import React, { Component } from 'react';
 import ConnexionBouton from '../components/ConnexionBouton';
 import PanicBouton from "../components/PanicBouton";
 import {Row, Input, Button} from 'react-materialize';
-
+//Component
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 //import CSS
 import './Accueil.css'
 
 //import images
-import tartinette from '../images/tartinette.png';
-import logo_tartine_rond_vert from '../images/logo_tartine_rond_vert.png';
 import frigo from '../images/frigo.png';
 import boiteatartines from '../images/boiteatartines.png';
 import tartine from '../images/tartine.png';
 import ordinateur from '../images/ordinateur.png';
 import logo_ecole_saint_henri from '../images/logo_ecole_saint_henri.png';
-import legumes_vert from '../images/legumes_vert.png';
 
 
 class Accueil extends React.Component {
     render() {
         return(
             <div className="accueil">
-                <div className="header">
-                    <div className="logoBanniereTartinette">
-                        <img class="responsive-img" src={logo_tartine_rond_vert} alt="logo tartinette"/>
-                        <img class="responsive-img" src={tartinette} alt="tartinette" className="tartinette"/>
-                    </div>
-                </div>
+                <Header/>
                 <div className="main_content">
                     <div className="accueilParagraphe1">
                         <div className="border_bottom">
@@ -78,10 +72,7 @@ class Accueil extends React.Component {
                     <div className="accueilParagraphe3">
                         <img class="responsive-img" src={logo_ecole_saint_henri} alt="logo_ecole_saint_henri" className="logo_ecole_saint_henri"/>
                     </div>
-                    <div className="footer">
-                        <img class="responsive-img" src={legumes_vert} alt="image de légumes"/>
-                        <p className="footer">Copyright © tartinette.be 2018</p>
-                    </div>
+                    <Footer/>
                 </div>
             </div>
         )
