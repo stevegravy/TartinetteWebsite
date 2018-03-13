@@ -18,6 +18,7 @@ import Tribu from './layout/Tribu';
 import Validation from './layout/Validation';
 
 import NotFound from './layout/NotFound';
+import InscriptionEnfant from "./components/InscriptionEnfant";
 
 const Root = () => {
     return (
@@ -34,7 +35,7 @@ const Root = () => {
                         <li><Dropdown trigger={
                                 <Button>Réglages</Button>
                             }>
-                                <NavItem>Tribu</NavItem>
+                                <NavItem><Link to="/Tribu">Tribu</Link></NavItem>
                                 <NavItem divider />
                                 <NavItem>Paiement</NavItem>
                             </Dropdown>
@@ -52,7 +53,7 @@ const Root = () => {
                     <Route exact path='/Paiement' component={Paiement}/>
                     <Route exact path='/PaiementPaypal' component={PaiementPaypal}/>
                     <Route exact path='/PaiementStripe' component={PaiementStripe}/>
-                    <Route exact path='/Tribu' component={Tribu}/>
+                    <Route exact path='/Tribu' component={InscriptionEnfant}/>
                     <Route exact path='/Validation' component={Validation}/>
                     <Route component={NotFound}/>
                 </Switch>

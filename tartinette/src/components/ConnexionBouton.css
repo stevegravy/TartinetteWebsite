@@ -1,11 +1,16 @@
 .connexionbouton button{
-    background-color: #00AF65;
+    background-color: #1d7d74;
     padding: 20px 50px 60px 50px;
+    text-transform: inherit;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .connexionbouton button:hover{
-    background-color: #02c975;
+    background-color: #00AF65;
     padding: 25px 55px 65px 55px;
+    text-transform: inherit;
+    font-weight: bolder;
 }
 
 .envoi{
@@ -13,11 +18,11 @@
 }
 
 .envoi button {
-    background-color: #00AF65;
+    background-color: #1d7d74;
 }
 
 .envoi button:hover {
-    background-color: #02c975;
+    background-color: #00AF65;
 }
 
 .connexion_modal{
@@ -29,24 +34,24 @@
 }
 
 .lien_inscription a{
-    color: #00AF65;
+    color: #1d7d74;
     text-decoration: none;
 }
 
 .lien_inscription a:hover{
-    color: #02c975;
-    border-bottom: solid #02c975;
+    color: #00AF65;
+    border-bottom: solid #00AF65;
 }
 .lien_mdpOublie{
     text-align: right;
 }
 
 .lien_mdpOublie a{
-    color: #00AF65;
+    color: #1d7d74;
     text-decoration: none;
 }
 
 .lien_mdpOublie a:hover{
-    color: #02c975;
-    border-bottom: solid #02c975;
+    color: #00AF65;
+    border-bottom: solid #00AF65;
 }
