@@ -8,7 +8,8 @@
 }
 
 h2{
-    font-size: 40px;
+    font-size: 35px;
+    padding-top: 20px;
 }
 .border_bottom .padding_bottom{
     margin: 0;
@@ -30,7 +31,7 @@ h3{
 
 .border_bottom{
     border-bottom: solid;
-    border-bottom-width: medium;
+    border-bottom-width: 2px;
     border-color: gray;
     border-radius: 5px;
     margin-bottom: 14px;
@@ -41,7 +42,7 @@ h3{
 
 .accueilParagraphe1{
     border-bottom: solid;
-    border-bottom-width: medium;
+    border-bottom-width: 2px;
     border-color: gray;
     border-radius: 5px;
     padding-bottom: 40px;
@@ -51,14 +52,14 @@ h3{
     display: flex;
     text-align: center;
     border-bottom: solid;
-    border-bottom-width: medium;
+    border-bottom-width: 2px;
     border-color: gray;
     border-radius: 5px;
 }
 
-.textInRed{
+.textInColor{
     /*color: #264B7D;*/
-    color: #3D7ACB;
+    color: #00AF65;
 }
 
 .iconeParagraphe{
@@ -69,28 +70,32 @@ h3{
     width: 100%;
     text-align: center;
     border-bottom: solid;
-    border-bottom-width: medium;
+    border-bottom-width: 2px;
     border-color: gray;
     border-radius: 5px;
 }
 
 .contact Button{
-    background-color: #00AF65;
+    background-color: #1d7d74;
+    padding: 20px 50px 60px 50px;
+    text-transform: inherit;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .contact Button:hover{
-    background-color: #02c975;
+    background-color: #00AF65;
 }
 
 .titreContact{
-    color: #3D7ACB;
+    color: #00AF65;
 }
 
 .contact{
     margin-top: 60px;
     padding-bottom: 40px;
     border-bottom: solid;
-    border-bottom-width: medium;
+    border-bottom-width: 2px;
     border-color: gray;
     border-radius: 5px;
 }

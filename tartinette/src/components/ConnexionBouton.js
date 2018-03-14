@@ -4,6 +4,28 @@ import {Button, Modal, Row, Input} from 'react-materialize';
 import './ConnexionBouton.css';
 
 class ConnexionBouton extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state={name: '', password: ''};
+
+      /*  this.handleChangeName = this.handleChangeName.bind(this);
+        this.handleChangePassword = this.handleChangePassword.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);*/
+    }
+
+    handleChangeName(event){
+        this.setState({name: event.target.value});
+    }
+
+    handleChangePassword(event){
+        this.setState({password: event.target.value});
+    }
+
+    handleSubmit(event){
+        alert('Bienvenue ' + this.state.name);
+        event.preventDefault();
+    }
     render() {
         return(
             <div className="connexionbouton">
@@ -12,11 +34,13 @@ class ConnexionBouton extends React.Component {
                     header='Connectez-vous'
                     trigger={<Button waves='light'>Commander</Button>}>
                     <Row>
-                        <Input s={6} label="Nom d'utilisateur" />
-                        <Input type="password" label="Mot de passe" s={6} />
-                        <div className="envoi">
-                            <Button waves='light'>Confirmer</Button>
-                        </div>
+                        <form onSubmit={this.handleSubmit.bind(this)}>
+                            <Input s={6} label="Nom d'utilisateur" type="text" value={this.state.name} onChange={this.handleChangeName.bind(this)} required/>
+                            <Input s={6} label="Mot de passe" type="password" value={this.state.password} onChange={this.handleChangePassword.bind(this)} required/>
+                            <div className="envoi">
+                                <Button waves='light' type="submit" value="Submit">Confirmer</Button>
+                            </div>
+                        </form>
                     </Row>
                     <div className="oubliMotDePasse">
                         <p className="lien_mdpOublie"><a href="./InscriptionBouton.js">Mot de passe oublié?</a></p>

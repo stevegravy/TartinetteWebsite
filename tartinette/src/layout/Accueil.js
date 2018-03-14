@@ -24,38 +24,37 @@ class Accueil extends React.Component {
                 <div className="main_content">
                     <div className="accueilParagraphe1">
                         <div className="border_bottom">
-                            <h1 className="textInRed">No pic-nic? No panic!</h1>
-                            <h2 className="padding_bottom"><span className="textInRed">Inscrivez-vous</span> et commandez quand vous voulez!</h2>
+                            <h2 className="padding_bottom"><span className="textInColor">Inscrivez-vous</span> et commandez quand vous voulez!</h2>
                             <ConnexionBouton/>
                         </div>
-                        <h3 className="margin_top"><span className="textInRed">Pour demain?</span> Pas de problème <br/>
+                        <h3 className="margin_top"><span className="textInColor">Pour demain?</span> Pas de problème <br/>
                             Commande possible jusqu'a 8 heure, le matin même.</h3>
                         <PanicBouton/>
                     </div>
                     <div className="accueilParagraphe2">
                         <div className="iconeParagraphe">
                             <img class="responsive-img" src={frigo} alt="image frigo" className="frigo"/>
-                            <h4 className="textInRed">Frigo vide?</h4>
+                            <h4 className="textInColor">Frigo vide?</h4>
                             <p>Le jambon est vert? Le pain est poilu? <br/>
                                 La salade est blette? Pas de soucis!</p>
                         </div>
                         <div className="iconeParagraphe">
                             <img class="responsive-img" src={ordinateur} alt="image ordinateur" className="ordinateur"/>
-                            <h4 className="textInRed">Relax Max!</h4>
+                            <h4 className="textInColor">Relax Max!</h4>
                             <p>Prenez notre formule abonnement et<br/>
                                 commandez comme bon vous semble.<br/>
                                 Fini les boîtes à tartines...</p>
                         </div>
                         <div className="iconeParagraphe">
                             <img class="responsive-img" src={boiteatartines} alt="image boite à tartines" className="boitetartines"/>
-                            <h4 className="textInRed">Fini la boîte</h4>
+                            <h4 className="textInColor">Fini la boîte</h4>
                             <p>Du sain, du local, de saison, du frais!<br/>
                                 Que du bon pour vos enfants...
                             </p>
                         </div>
                         <div className="iconeParagraphe">
                             <img class="responsive-img" src={tartine} alt="image tartin" className="tartine"/>
-                            <h4 className="textInRed">Testé et approuvé!</h4>
+                            <h4 className="textInColor">Testé et approuvé!</h4>
                             <p>Notre concept a été testé et approuvé<br/>
                                 par les enfants et les parents de<br/>
                                 l'école Saint-Henri...</p>
