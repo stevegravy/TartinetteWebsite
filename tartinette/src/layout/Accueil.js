@@ -27,9 +27,11 @@ class Accueil extends React.Component {
                             <h2 className="padding_bottom"><span className="textInColor">Inscrivez-vous</span> et commandez quand vous voulez!</h2>
                             <ConnexionBouton/>
                         </div>
-                        <h3 className="margin_top"><span className="textInColor">Pour demain?</span> Pas de problème <br/>
-                            Commande possible jusqu'a 8 heure, le matin même.</h3>
-                        <PanicBouton/>
+                        <div className="border_bottom">
+                            <h3 className="margin_top"><span className="textInColor">Pour demain?</span> Pas de problème <br/>
+                                Commande possible jusqu'a 8 heure, le matin même.</h3>
+                            <PanicBouton/>
+                        </div>
                     </div>
                     <div className="accueilParagraphe2">
                         <div className="iconeParagraphe">

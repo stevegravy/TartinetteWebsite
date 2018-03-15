@@ -26,35 +26,45 @@ h3{
 
 .connexionbouton{
     padding: 20px;
-    margin-bottom: 14px;
+    /*
+    margin-bottom: 20px;
+    */
 }
 
 .border_bottom{
-    border-bottom: solid;
+    /*border-bottom: solid;
     border-bottom-width: 2px;
     border-color: gray;
-    border-radius: 5px;
+    border-radius: 5px;*/
     margin-bottom: 14px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 4px;
 }
 .margin_top{
-    margin-top: 50px;
+    margin-top: 30px;
+    padding: 20px;
 }
 
 .accueilParagraphe1{
-    border-bottom: solid;
+    /*border-bottom: solid;
     border-bottom-width: 2px;
     border-color: gray;
-    border-radius: 5px;
-    padding-bottom: 40px;
+    border-radius: 5px;*/
+    margin-bottom: 14px;
+    margin-top: 30px;
+    padding-bottom: 3px;
 }
 
 .accueilParagraphe2{
     display: flex;
     text-align: center;
-    border-bottom: solid;
+    /*border-bottom: solid;
     border-bottom-width: 2px;
     border-color: gray;
-    border-radius: 5px;
+    border-radius: 5px;*/
+    margin-bottom: 14px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 4px;
 }
 
 .textInColor{
@@ -69,10 +79,13 @@ h3{
 .accueilParagraphe3{
     width: 100%;
     text-align: center;
-    border-bottom: solid;
+    /*border-bottom: solid;
     border-bottom-width: 2px;
     border-color: gray;
-    border-radius: 5px;
+    border-radius: 5px;*/
+    margin-bottom: 14px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 4px;
 }
 
 .contact Button{
@@ -92,12 +105,13 @@ h3{
 }
 
 .contact{
-    margin-top: 60px;
+    margin-top: 30px;
     padding-bottom: 40px;
-    border-bottom: solid;
+   /* border-bottom: solid;
     border-bottom-width: 2px;
     border-color: gray;
-    border-radius: 5px;
+    border-radius: 5px;*/
+    box-shadow: 1px 1px 4px;
 }
 
 .logo_ecole_saint_henri{
@@ -111,5 +125,9 @@ h3{
     color: gray;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.PanicBouton{
+    padding-bottom: 20px;
 }
 
