@@ -67,7 +67,7 @@ class InscriptionEnfant extends React.Component {
         var data = e.target.value;
         this.setState({taille: data});
         this.setState({jour: ""});
-        this.setState({checked:false});
+        this.setState({prix:0});
     }
 
     HandleChangeBread(e) {

@@ -4,7 +4,7 @@ import PaypalExpressBtn from 'react-paypal-express-checkout';
 import './PaiementPaypal.css';
 
 export default class PaiementPaypal extends React.Component {
-    
+
     render() {
         let style= {
             size: 'large',
