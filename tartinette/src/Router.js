@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import {Button, Dropdown, NavItem} from 'react-materialize';
 //CSS
+/*
 import './Router.css';
+*/
 
 // Component
 import Loading from './layout/Loading';

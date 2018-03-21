@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {Button, Modal, Row, Input} from 'react-materialize';
 //CSS
+/*
 import './ConnexionBouton.css';
+*/
 
 class ConnexionBouton extends React.Component {
 

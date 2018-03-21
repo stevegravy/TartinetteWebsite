@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import PaiementPaypal from "../layout/PaiementPaypal";
 import PaiementStripe from "../layout/PaiementStripe";
+import ButtonCommande from "./ButtonCommande";
 //CSS
 /*
 import "./InscriptionEnfants.css";
@@ -167,7 +168,6 @@ class InscriptionEnfant extends React.Component {
     render() {
         return (
             <div className="header">
-                {/*<Header/>*/}
                 <div className="mainContent">
                     <h4 className="nomEnfant">"Nom de la tribu"</h4>
                     <Row>
@@ -268,11 +268,13 @@ class InscriptionEnfant extends React.Component {
                                onChange={this.HandleChangeVegetable.bind(this)}/>
                     </Row>
                 </div>
-                {/*<PaiementPaypal/>
+                <PaiementPaypal prix={this.state.prix}/>
 
-                <PaiementStripe/>*/}
+{/*
+                <PaiementStripe/>
+*/}
                 {this.state.prix > 0 && <h1>{this.state.prix} Euros</h1>}
-                <Footer/>
+                <ButtonCommande commande={this.state}/>
             </div>
 
         )

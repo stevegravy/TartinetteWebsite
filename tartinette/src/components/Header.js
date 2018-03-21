@@ -1,5 +1,7 @@
 import React from 'react';
+/*
 import './Header.css'
+*/
 //Image
 import tartinette from '../images/tartinette.png';
 import Logo_Tartinette from '../images/Logo_Tartinette.png';
