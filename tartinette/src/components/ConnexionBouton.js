@@ -14,12 +14,10 @@ class ConnexionBouton extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);*/
     }
 
-    handleChangeName(event){
-        this.setState({name: event.target.value});
-    }
-
-    handleChangePassword(event){
-        this.setState({password: event.target.value});
+    handleChange(e){
+        var change = {}
+        change[e.target.name] = e.target.value
+        this.setState(change)
     }
 
     handleSubmit(event){
@@ -35,8 +33,8 @@ class ConnexionBouton extends React.Component {
                     trigger={<Button waves='light'>Commander</Button>}>
                     <Row>
                         <form onSubmit={this.handleSubmit.bind(this)}>
-                            <Input s={6} label="Nom d'utilisateur" type="text" value={this.state.name} onChange={this.handleChangeName.bind(this)} required/>
-                            <Input s={6} label="Mot de passe" type="password" value={this.state.password} onChange={this.handleChangePassword.bind(this)} required/>
+                            <Input s={6} label="Nom d'utilisateur" type="text" name="name" value={this.state.name} onChange={this.handleChange.bind(this)} required/>
+                            <Input s={6} label="Mot de passe" type="password" name="password" value={this.state.password} onChange={this.handleChange.bind(this)} required/>
                             <div className="envoi">
                                 <Button waves='light' type="submit" value="Submit">Confirmer</Button>
                             </div>
