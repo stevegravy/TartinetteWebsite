@@ -14,9 +14,7 @@ export default class ButtonCommande extends React.Component {
                     <Input name='paiement' type='radio' value='stripe' label='Stripe'/>
                     <Input name='paiement' type='radio' value='paypal' label='Paypall'/>
                 </Row>
-                <div className="confirmationBouton">
-                    <Button waves='light'>Confirmer mon abonnement</Button>
-                </div>
+
             </div>
         )
     }
