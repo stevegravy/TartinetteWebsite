@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Button, Modal, Row, Input} from 'react-materialize';
+import {Link} from 'react-router-dom';
 //CSS
 import './ConnexionBouton.css';
 
@@ -7,11 +8,10 @@ class ConnexionBouton extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state={name: '', password: ''};
-
-      /*  this.handleChangeName = this.handleChangeName.bind(this);
-        this.handleChangePassword = this.handleChangePassword.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);*/
+        this.state={
+            name: '',
+            password: ''
+        };
     }
 
     handleChange(e){
@@ -19,20 +19,29 @@ class ConnexionBouton extends React.Component {
         change[e.target.name] = e.target.value
         this.setState(change)
     }
-
-    handleSubmit(event){
-        alert('Bienvenue ' + this.state.name);
-        event.preventDefault();
+    //Vérification login
+    handleSubmit(e){
+        var x = document.forms["loginForm"] ["name"] ["password"].value();
+        if (x==true){
+            alert('Bienvenue ' + this.state.name);
+            href={'/InscriptionEnfant'},
+            e.preventDefault();
+        }
+        else{
+            alert("Nom d'utilisateur ou mot de passe incorrect");
+            e.preventDefault();
+        }
     }
+
     render() {
         return(
-            <div className="connexionbouton">
+            <div name="connexionbouton">
                 <Modal
                     className = "connexion_modal"
                     header='Connectez-vous'
                     trigger={<Button waves='light'>Commander</Button>}>
                     <Row>
-                        <form onSubmit={this.handleSubmit.bind(this)}>
+                        <form className="loginForm" onSubmit={this.handleSubmit.bind(this)} method="post">
                             <Input s={6} label="Nom d'utilisateur" type="text" name="name" value={this.state.name} onChange={this.handleChange.bind(this)} required/>
                             <Input s={6} label="Mot de passe" type="password" name="password" value={this.state.password} onChange={this.handleChange.bind(this)} required/>
                             <div className="envoi">
@@ -44,7 +53,7 @@ class ConnexionBouton extends React.Component {
                         <p className="lien_mdpOublie"><a href="./InscriptionBouton.js">Mot de passe oublié?</a></p>
                     </div>
                     <div className="inscription">
-                        <p className="lien_inscription"><a href="./InscriptionBouton.js">Pas encore inscrit?</a></p>
+                        <p className="lien_inscription"><a href="./InscriptionEnfant.js">Pas encore inscrit?</a></p>
                     </div>
                 </Modal>
             </div>

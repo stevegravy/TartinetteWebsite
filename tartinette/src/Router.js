@@ -27,19 +27,11 @@ const Root = () => {
                 <nav>
                     <ul>
                         <li><Link to="/">Accueil</Link></li>
-                        <li><Link to="/Inscription">Inscription</Link></li>
+                        <li><Link to="/InscriptionEnfant">Inscription</Link></li>
                         <li><Link to="/Connexion">Connexion</Link></li>
                         <li><Link to="/Tribu">Tribu</Link></li>
                         <li><Link to="/Commande">Commande</Link></li>
                         <li><Link to="/Paiement">Paiement</Link></li>
-                        <li><Dropdown trigger={
-                                <Button>Réglages</Button>
-                            }>
-                                <NavItem><Link to="/Tribu">Tribu</Link></NavItem>
-                                <NavItem divider />
-                                <NavItem>Paiement</NavItem>
-                            </Dropdown>
-                        </li>
                     </ul>
                 </nav>
                 <hr/>
@@ -53,8 +45,7 @@ const Root = () => {
                     <Route exact path='/Paiement' component={Paiement}/>
                     <Route exact path='/PaiementPaypal' component={PaiementPaypal}/>
                     <Route exact path='/PaiementStripe' component={PaiementStripe}/>
-                    <Route exact path='/Tribu' component={InscriptionEnfant}/>
-                    <Route exact path='/Validation' component={Validation}/>
+                    <Route exact path='/InscriptionEnfant' component={InscriptionEnfant}/>
                     <Route component={NotFound}/>
                 </Switch>
             </div>
