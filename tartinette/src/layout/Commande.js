@@ -14,18 +14,6 @@ class Commande extends React.Component {
                 <div className="mainContent">
                     <Header/>
                     <InscriptionEnfant/>
-                    <p className="boutonAjoutEnfant">ajouter un enfant</p>
-                    <Button floating large className='green' waves='light' icon='add' />
-                    <p className="form">Prix hebdomadaire :</p>
-                    <Input s={6} formmethod="get" />
-                    <p className="form">Méthode de paiement</p>
-                    <Row>
-                        <Input name='paiement' type='radio' value='stripe' label='Stripe' />
-                        <Input name='paiement' type='radio' value='paypal' label='Paypall' />
-                    </Row>
-                    <div className="confirmationBouton">
-                        <Button waves='light'>Confirmer mon abonnement</Button>
-                    </div>
                     <Footer/>
                 </div>
             </div>

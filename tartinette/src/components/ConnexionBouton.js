@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {Button, Modal, Row, Input} from 'react-materialize';
 import {Link} from 'react-router-dom';
 //CSS
+/*
 import './ConnexionBouton.css';
+*/
 
 class ConnexionBouton extends React.Component {
 
@@ -23,13 +25,13 @@ class ConnexionBouton extends React.Component {
     handleSubmit(e){
         var x = document.forms["loginForm"] ["name"] ["password"].value();
         if (x==true){
+            e.stopPropagation();
             alert('Bienvenue ' + this.state.name);
-            href={'/InscriptionEnfant'},
-            e.preventDefault();
+            window.pushState(null, '/InscriptionEnfant');
         }
         else{
+            e.stopPropagation();
             alert("Nom d'utilisateur ou mot de passe incorrect");
-            e.preventDefault();
         }
     }
 
@@ -41,7 +43,7 @@ class ConnexionBouton extends React.Component {
                     header='Connectez-vous'
                     trigger={<Button waves='light'>Commander</Button>}>
                     <Row>
-                        <form className="loginForm" onSubmit={this.handleSubmit.bind(this)} method="post">
+                        <form className="loginForm" onSubmit={this.handleSubmit.bind(this)} >
                             <Input s={6} label="Nom d'utilisateur" type="text" name="name" value={this.state.name} onChange={this.handleChange.bind(this)} required/>
                             <Input s={6} label="Mot de passe" type="password" name="password" value={this.state.password} onChange={this.handleChange.bind(this)} required/>
                             <div className="envoi">
