@@ -12,7 +12,7 @@ class Header extends React.Component {
             <div className="header">
                 <div className="logoBanniereTartinette">
                     <img className="responsive-img" src={Logo_Tartinette} alt="logo tartinette"/>
-                    <img className="responsive-img" src={tartinette} alt="tartinette" className="tartinette"/>
+                    <img className="responsive-img tartinette" src={tartinette} alt="tartinette"/>
                 </div>
                 <div className="tagline">
                     <h1 className="taglineTitle">Un pic-nic sain pour votre enfant livré dans sa classe</h1>

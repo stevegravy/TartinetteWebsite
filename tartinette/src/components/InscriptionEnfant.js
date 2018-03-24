@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import {Row, Input} from 'react-materialize';
+import React from 'react';
+import {Row, Input, Button} from 'react-materialize';
 //Component
-import Header from "./Header";
-import Footer from "./Footer";
+
 import PaiementPaypal from "../layout/PaiementPaypal";
-import PaiementStripe from "../layout/PaiementStripe";
-import ButtonCommande from "./ButtonCommande";
+/*import PaiementStripe from "../layout/PaiementStripe";
+import ButtonCommande from "./ButtonCommande";*/
+import ConfirmationCommande from "../layout/ConfirmationCommande";
 //CSS
 /*
 import "./InscriptionEnfants.css";
@@ -17,9 +17,9 @@ const excep = [];
 
 class InscriptionEnfant extends React.Component {
 
-  /*  componentDidUpdate() {
-        console.log(this.state);
-    }*/
+    /*  componentDidUpdate() {
+          console.log(this.state);
+      }*/
 
     constructor(props) {
         super(props);
@@ -35,7 +35,8 @@ class InscriptionEnfant extends React.Component {
             exception: "",
             detail: "",
             legume: "",
-            prix: 0
+            prix: 0,
+            isVisible: true
         }
     }
 
@@ -67,7 +68,7 @@ class InscriptionEnfant extends React.Component {
         var data = e.target.value;
         this.setState({taille: data});
         this.setState({jour: ""});
-        this.setState({prix:0});
+        this.setState({prix: 0});
     }
 
     HandleChangeBread(e) {
@@ -96,7 +97,7 @@ class InscriptionEnfant extends React.Component {
         this.ChangePrice();
     }
 
-    ChangePrice(){
+    ChangePrice() {
         var nombre = this.state.jour;
         var taille = this.state.taille;
         if (taille === "Benjamin") {
@@ -108,7 +109,7 @@ class InscriptionEnfant extends React.Component {
                 this.setState({prix: 8.10})
             } else if (nombre.length === 4) {
                 this.setState({prix: 10.20})
-            } else if (nombre.length === 5){
+            } else if (nombre.length === 5) {
                 this.setState({prix: 12.00})
             } else (
                 this.setState({prix: 0})
@@ -122,7 +123,7 @@ class InscriptionEnfant extends React.Component {
                 this.setState({prix: 10.80})
             } else if (nombre.length === 4) {
                 this.setState({prix: 13.60})
-            } else if (nombre.length === 5){
+            } else if (nombre.length === 5) {
                 this.setState({prix: 16.00})
             } else (
                 this.setState({prix: 0})
@@ -136,7 +137,7 @@ class InscriptionEnfant extends React.Component {
                 this.setState({prix: 13.50})
             } else if (nombre.length === 4) {
                 this.setState({prix: 17.00})
-            } else if (nombre.length === 5){
+            } else if (nombre.length === 5) {
                 this.setState({prix: 20.00})
             } else (
                 this.setState({prix: 0})
@@ -164,10 +165,15 @@ class InscriptionEnfant extends React.Component {
         this.setState({legume: data})
     }
 
+    ChangeState(e){
+        e.preventDefault();
+        this.setState({isVisible: !this.state.isVisible})
+    }
 
     render() {
         return (
             <div className="header">
+                {this.state.isVisible &&
                 <div className="mainContent">
                     <h4 className="nomEnfant">"Nom de la tribu"</h4>
                     <Row>
@@ -211,10 +217,12 @@ class InscriptionEnfant extends React.Component {
                         <p className="form">Appétit de mon enfant</p>
                         <Input s={6} type='select' required onChange={this.HandleChangeSize.bind(this)}>
                             <option defaultValue>Seletionner une taille</option>
-                            <option value='Benjamin'>La Benjamine/Le Benjamin : 2 tranches Blanc ou 5 Céréales ou 1/4
+                            <option value='Benjamin'>La Benjamine/Le Benjamin : 2 tranches Blanc ou 5 Céréales ou
+                                1/4
                                 Baguette
                             </option>
-                            <option value='Cadet'>La Cadette/Le Cadet : 4 tranches Blanc ou 5 Céréales ou 1/3 Baguette
+                            <option value='Cadet'>La Cadette/Le Cadet : 4 tranches Blanc ou 5 Céréales ou 1/3
+                                Baguette
                             </option>
                             <option value='Ainé'>L'Ainée/L'Ainé : 6 tranches Blanc ou 5 Céréales ou 1/2 Baguette
                             </option>
@@ -237,16 +245,19 @@ class InscriptionEnfant extends React.Component {
                                onChange={this.HandleChangeDays.bind(this)}/>
                         <Input name='Mardi' type='checkbox' value='Mardi' label='Mardi' className='jourSemaine'
                                onChange={this.HandleChangeDays.bind(this)}/>
-                        <Input name='Mercredi' type='checkbox' value='Mercredi' label='Mercredi' className='jourSemaine'
+                        <Input name='Mercredi' type='checkbox' value='Mercredi' label='Mercredi'
+                               className='jourSemaine'
                                onChange={this.HandleChangeDays.bind(this)}/>
                         <Input name='Jeudi' type='checkbox' value='Jeudi' label='Jeudi' className='jourSemaine'
                                onChange={this.HandleChangeDays.bind(this)}/>
-                        <Input name='Vendredi' type='checkbox' value='Vendredi' label='Vendredi' className='jourSemaine'
+                        <Input name='Vendredi' type='checkbox' value='Vendredi' label='Vendredi'
+                               className='jourSemaine'
                                onChange={this.HandleChangeDays.bind(this)}/>
                     </Row>
                     <p className="form">Mon enfant n'est pas trop fan :</p>
                     <Row>
-                        <Input name='retirerLegumaise' type='checkbox' value='retirerLegumaise' label='de la légumaise'
+                        <Input name='retirerLegumaise' type='checkbox' value='retirerLegumaise'
+                               label='de la légumaise'
                                className='retirerCondiment' onChange={this.HandleChangeException.bind(this)}/>
                         <Input name='retirerPesto' type='checkbox' value='retirerPesto' label='du pesto'
                                className='retirerCondiment' onChange={this.HandleChangeException.bind(this)}/>
@@ -254,9 +265,11 @@ class InscriptionEnfant extends React.Component {
                                className='retirerCondiment' onChange={this.HandleChangeException.bind(this)}/>
                         <Input name='retirerSalade' type='checkbox' value='retirerSalade' label='de la salade'
                                className='retirerCondiment' onChange={this.HandleChangeException.bind(this)}/>
-                        <Input name='retirerLegumes' type='checkbox' value='retirerLegumes' label='des légumes grillés'
+                        <Input name='retirerLegumes' type='checkbox' value='retirerLegumes'
+                               label='des légumes grillés'
                                className='retirerCondiment' onChange={this.HandleChangeException.bind(this)}/>
-                        <p>Cochez ce que vous ne voulez pas comme accompagnement dans les tartines de votre enfant.</p>
+                        <p>Cochez ce que vous ne voulez pas comme accompagnement dans les tartines de votre
+                            enfant.</p>
                         <Input s={6} label="Détails" Placeholder="Allergies, intolérences, spécificités,..."
                                onChange={this.HandleChangeDetail.bind(this)}/>
                     </Row>
@@ -267,14 +280,25 @@ class InscriptionEnfant extends React.Component {
                         <Input name='fruit' type='radio' value='fruitNon' label='Non'
                                onChange={this.HandleChangeVegetable.bind(this)}/>
                     </Row>
-                </div>
-                <PaiementPaypal prix={this.state.prix}/>
+                    {this.state.prix > 0 && <h1>{this.state.prix} Euros</h1>}
 
-{/*
-                <PaiementStripe/>
-*/}
-                {this.state.prix > 0 && <h1>{this.state.prix} Euros</h1>}
-                <ButtonCommande commande={this.state}/>
+                    <div className="confirmationBouton">
+                        <Button onClick={this.ChangeState.bind(this)} waves='light'>Confirmer mon
+                            abonnement</Button>
+                    </div>
+                </div>
+                }
+                {!this.state.isVisible &&
+                    <div>
+                        <ConfirmationCommande recap={this.state}/>
+                        <PaiementPaypal prix={this.state.prix}/>
+                        <button onClick={this.ChangeState.bind(this)}>Retour à la Commande</button>
+                    </div>
+                }
+
+                {/*<PaiementStripe/>*/}
+
+
             </div>
 
         )

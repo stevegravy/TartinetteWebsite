@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import {Row, Input, Button} from 'react-materialize';
 //component
 import Header from '../components/Header';

@@ -42,7 +42,9 @@ const Root = () => {
                     <Route exact path='/Loading' component={Loading}/>
                     <Route exact path='/Connexion' component={Connexion}/>
                     <Route exact path='/Commande' component={Commande}/>
+{/*
                     <Route exact path='/ConfirmationCommande' component={ConfirmationCommande}/>
+*/}
                     <Route exact path='/Inscription' component={Inscription}/>
                     <Route exact path='/Paiement' component={Paiement}/>
                     <Route exact path='/PaiementPaypal' component={PaiementPaypal}/>
